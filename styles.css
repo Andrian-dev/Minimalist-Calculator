@@ -1,0 +1,108 @@
+/* Developed by Andrian-dev */
+
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+/* Display screen */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #f8f8f8;
+    color: #333;
+    outline: none;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/* Button styling */
+.buttons button {
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: #e6e6e6;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.buttons button:hover {
+    background: #d1d1d1;
+}
+
+/* Button click effect */
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Operator buttons */
+.buttons button:nth-child(4n),
+.buttons button:last-child {
+    background: #4CAF50;
+    color: white;
+}
+
+.buttons button:nth-child(4n):hover,
+.buttons button:last-child:hover {
+    background: #45a049;
+}
+
+/* Equal button */
+button.equal {
+    background: #2196F3;
+    color: white;
+}
+
+button.equal:hover {
+    background: #1e88e5;
+}
+
+/* Clear button */
+button.clear {
+    background: #ff4d4d;
+    color: white;
+    font-weight: bold;
+}
+
+button.clear:hover {
+    background: #e60000;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
